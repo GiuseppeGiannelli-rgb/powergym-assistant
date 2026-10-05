@@ -1,0 +1,11 @@
+/* CSS personalizzato, collegato in .chainlit/config.toml con custom_css = "/public/app.css" */
+
+/* Testo segnaposto della casella dei messaggi nel colore primario del tema */
+.empty\:before\:text-muted-foreground:empty:before {
+    color: hsl(var(--primary)) !important;
+}
+
+/* Starter (domande di esempio) con bordo arancione al passaggio del mouse */
+button[id^="starter-"]:hover {
+    border-color: hsl(var(--primary)) !important;
+}
